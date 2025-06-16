@@ -34,7 +34,7 @@ async fuction main(){
     await mongoose.connect(process.env.MONGO_URL);
 
     app.listen(3000);
-    console.log("BE RUNNING DB CONNECTED");
+    console.log("BE RUNNING DB")
 }
 
 main();
