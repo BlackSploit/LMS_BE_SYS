@@ -4,6 +4,14 @@ const Schema = mongoose.Schema;
 
 const ObjectId = mongoose.Types.ObjectId;
 
+
+
+
+
+
+
+
+
 const userSchema = new Schema({
   email: { type: String, unique: true },
   password: String,
@@ -31,10 +39,25 @@ const purchaseSchema = new Schema({
   courseId: ObjectId,
 });
 
+
+
+
+
+
+
+
+
+
+
+
 const userModel = mongoose.model("User", userSchema);
 const adminModel = mongoose.model("Admin", adminSchema);
 const courseModel = mongoose.model("Course", courseSchema);
 const purchaseModel = mongoose.model("Purchase", purchaseSchema);
+
+
+
+
 
 module.exports = {
   userModel,
