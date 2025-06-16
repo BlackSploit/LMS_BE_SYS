@@ -1,6 +1,5 @@
 const express = require("express");
-const {createUserRoutes} = require('./user');
-const {createCourse} = require('./course')
+const { userRouter} = require("./routes/user")
 const app = express();
 
 
@@ -8,9 +7,8 @@ const app = express();
 
 
 
-createUserRoutes(app);
+app.use("/user",userRouter);
 
-createCourse(app);
 
 
 
